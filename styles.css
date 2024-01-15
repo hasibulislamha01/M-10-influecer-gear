@@ -109,6 +109,24 @@ body{
     top: 7%;
 }
 
+/* company logo section styles */
+.top-line{
+    margin: 4rem auto 0rem auto;
+}
+.bottom-line{
+    margin: 0rem auto 4rem auto
+}
+.company-logos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0px auto;
+}
+.company-logos img{
+    margin: 2rem 0rem;
+    
+}
+
 
 
 /* responsive for small device */
@@ -152,8 +170,15 @@ body{
     .main-camera-section img{
         width: 80vw;
     }
-
-
+    
+    /* company logo section */
+    .company-logos{
+        flex-wrap: wrap;
+    }
+    .top-line, .bottom-line{
+        display: none;
+    }
+    
 }
 
 
@@ -198,5 +223,10 @@ body{
         .main-camera-section img{
             width: 80vw;
         }
+        /* company logo section */
+        .company-logos{
+        flex-wrap: wrap;
+        }
+       
 }
 
