@@ -1,0 +1,202 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Font awsome kit link */
+
+
+/* Common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 3rem 7.5rem;
+    max-width: 78rem;
+}
+.theme-button{
+    margin-top: 0rem;
+    font-family: inherit;
+    font-size: var(--normal-size);
+    font-weight: var(--bold-text);
+    color: #fff;
+    background-color: #E02C6D;
+    border: 1px solid transparent;
+    width: 12.25rem;
+    height: 2.75rem;
+}
+.theme-button:hover{
+    cursor: pointer;
+}
+
+/* CSS custom properties */
+:root{
+    /* font size */
+    --normal-size: 1rem;
+    --medium-size: 1.5rem;
+    --large-size: 1.75rem;
+
+    /* font weight */
+    --bold-text: 700;
+    --semi-bold-text: 600;
+}
+
+
+
+/* header styles */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: var(--medium-size);
+    font-weight: var(--bold-text);
+}
+.menu{
+    font-size: var(--normal-size);
+    font-weight: var(--semi-bold-text);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    
+}
+.menu li{
+    margin-left: 2.025rem;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+/* main section styles */
+.flex-container{
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner-description{
+    max-width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.banner-description h1{
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+}
+.banner-description p{
+    margin-bottom: 1rem;
+    font-weight: var(--semi-bold-text);
+    font-size: var(--normal-size);
+}
+#banner-button{
+    align-items: start;
+    border-radius: 44px;
+}
+
+
+.main-camera-section{
+    position: relative;
+    max-width: 45%;
+    margin: 0px auto;
+}
+.main-camera{
+    position: absolute;
+    left: 0%;
+    top: 7%;
+}
+
+
+
+/* responsive for small device */
+@media screen and (max-width: 576px) {
+    body{
+        margin: 2rem 1rem;
+    }
+    .nav-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li{
+        margin-left: 1.25rem;
+    }
+    /* banner section */
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .banner-description{
+        max-width: 80vw;
+        margin: 1rem auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-description h1,p,button{
+        
+        text-align: center;
+    }
+    .banner-description h1{
+        font-size: 2.2rem;
+        
+    }
+    .main-camera-section{
+        max-width: 80vw;
+    }
+    .main-camera-section img{
+        width: 80vw;
+    }
+
+
+}
+
+
+
+/* responsive for medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    body{
+        margin: 2rem 1rem;
+    }
+    .nav-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li{
+        margin-left: 1.25rem;
+    }
+        /* banner section */
+        .flex-container{
+            flex-direction: column-reverse;
+        }
+        .banner-description{
+            max-width: 80vw;
+            margin: 1rem auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner-description h1,p,button{
+            text-align: center;
+        }
+        .banner-description h1{
+            font-size: 2.2rem;
+            
+        }
+        .main-camera-section{
+            max-width: 80vw;
+        }
+        .main-camera-section img{
+            width: 80vw;
+        }
+}
+
